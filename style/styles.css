@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(25,25,25);
+}
+
+.texto
+{
+    border-right: 2px solid rgba(255,255,255,0.75);
+    color:rgba(255,255,255, .75);
+    font-family: 'New Tegomin', serif;
+    text-align: center;
+    width: 400;
+    font-size: 3em;
+    margin: 0 auto;
+    box-shadow: 3px 5px solid  black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation
+{
+    animation: blinkCursor 800ms infinite normal, typing 4s steps(50) 1s normal both;
+}
+
+@keyframes typing
+{
+    from{
+        width: 0;
+    }
+    to{
+        width: 11em;
+    }
+}
+
+@keyframes blinkCursor
+{
+    from{
+        border-right-color: rgba(255,255,255,0.75);
+    }
+    to{
+        border-right-color:transparent ;
+    }
+}
